@@ -4,14 +4,18 @@ body {
   font-size: 1em;
   font-family: 'Noto Sans', sans-serif;
   margin:0;
+  height: 100%;
+  background-image: url(../img/background.jpg);
 }
 
-html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      }
-  
+body h1{
+  box-sizing: border-box;
+  background-color: #76639b;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  padding: 1em;
+
 }
 
 .unslider img {
@@ -20,7 +24,6 @@ html, body {
 
 nav {
   box-sizing: border-box;
-  background-color: #2f184e;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -122,8 +125,15 @@ nav:after {
   margin:0 auto;
 }
 
+#pricing-menu{
+  background: #2f184e;
+  width: 100%;
+}
+
+
+
 button.accordion {
-    background-color: #76639B;
+    background-color: #afb8e1;
     color: #2F184e;
     cursor: pointer;
     padding: 18px;
@@ -133,21 +143,22 @@ button.accordion {
     outline: none;
     transition: 0.4s;
     font-size: 1.5em;
-    margin-left: 100px;
+    margin-left: 10%;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 button.accordion.active, button.accordion:hover {
-    background-color: #cfd0ca;
+    background-color: #f2c9c7
 }
 
 /* Style the accordion panel. Note: hidden by default */
 div.panel {
-    padding: 0 18px;
-    background-color: #b3d3ec;
+    padding: 0 4px;
+    background-color: #76639b;
     display: none;
     border: .2em ridge #f2c9c7;
-    width: 50%;
+    width: 79%;
+    margin-left: 10%;
 }
 
 /* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
@@ -156,18 +167,16 @@ div.panel.show {
 }
 
 div.panel table{
-  border: .1em ridge #2f184e;
+  border: .3em ridge #2f184e;
   border-collapse: collapse;
   margin: 0 auto;
-
-}
-
-div.panel th{
-  padding:  0em 4.167em 0em 0em;
+  background-color: #f2c9c7;
+  color: #2F184e;
 }
 
 div.panel th, td{
   text-align: center;
+  padding:  1em 3em 1em 3em;
 }
 
 #map {
@@ -224,23 +233,9 @@ div.panel th, td{
 
   #menu li:hover {
     background-image: url(../img/footprint.png);
-    background-size: contain;
+    background-size: 60px 60px;
     background-repeat: no-repeat;
   }
-
-  /*nav a:hover {
-
-    background: url("imgfootprint.jpg");
-    background-size: 80px 60px;
-    background-repeat: no-repeat;
-    padding-top: 40px;
-  }*/
-
-/*background: url("img_flwr.gif");
-    background-size: 80px 60px;
-    background-repeat: no-repeat;
-    padding-top: 40px;*/
-
 
   #facebook {
     position: absolute;
@@ -255,6 +250,9 @@ div.panel th, td{
     border-radius: 5px 20px 5px;
     right: .6%;
   }
+
+.unslider img {
+  max-width: 100%;
 }
 
 
