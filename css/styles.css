@@ -1,0 +1,306 @@
+body {
+  margin: 0em;
+  padding: 0em;
+  font-size: 1em;
+  font-family: 'Noto Sans', sans-serif;
+  margin:0;
+}
+
+html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      }
+  
+}
+
+.unslider img {
+  max-width: 80%;
+}
+
+nav {
+  box-sizing: border-box;
+  background-color: #2f184e;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#menu {
+  display: none;
+  /*padding: 0;*/
+  /*width: 50%;*/
+  /*margin: 0 auto;*/
+}
+nav:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#logo {
+  float: left;
+  padding: 10px;
+  width: 100px;
+}
+
+#logo img {
+ max-width: 100%;
+  
+}
+
+#footprint{
+ /* display: none;*/
+}
+
+#hamburger-image{
+  float: right;
+  padding-right: 5px;
+}
+
+#facebook {
+  position: absolute;
+  right: 50px;
+  top: 3%;
+}
+
+#twitter {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+}
+
+#facebook img,
+#twitter img{
+  border-radius: 5px 20px 5px;
+}
+
+header{
+  width:100%; 
+  background:inherit; 
+  height:50px; 
+  line-height:50px;
+}
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#131313;  position:absolute; text-align:center;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu li:hover{display: block;    background:#181818; padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+.menu ul li a:hover {  color: #fff; text-decoration:none;}
+.menu a{text-decoration:none; color:white;}
+.menu a:hover{text-decoration:none; color:white;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+
+button.accordion {
+    background-color: #76639B;
+    color: #2F184e;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    text-align: center;
+    border: .2em ridge #f2c9c7;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.5em;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #cfd0ca;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: #b3d3ec;
+    display: none;
+    border: .2em ridge #f2c9c7;
+    width: 50%;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    display: block !important;
+}
+
+div.panel table{
+  border: .1em ridge #2f184e;
+  border-collapse: collapse;
+  margin: 0 auto;
+
+}
+
+div.panel th{
+  padding:  0em 4.167em 0em 0em;
+}
+
+div.panel th, td{
+  text-align: center;
+}
+
+#map {
+  height:100%;
+}
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 600px) {
+
+  #logo{
+    /*width:  100px;*/
+    /*margin-right: 10px;*/
+  }
+
+  nav {
+    margin: 0 auto;
+    
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  #menu {
+    width: 80%;
+    padding-left: 0;
+    display: block;
+    float: left;
+    text-align: center;
+  }
+
+  #menu li {
+    box-sizing: border-box;
+    display: inline-block;
+    color: #cfd0ca;
+  /*  padding-top: 10%;
+    padding-right: 3%;*/
+   /* margin: 2em .3em;*/
+   /* margin-right: 2em;*/
+   padding: 0 10px;
+    font-size: 1em;
+    height: 100px;
+    line-height: 100px;
+  }
+
+  #menu li:hover {
+    background-image: url(../img/footprint.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  /*nav a:hover {
+
+    background: url("imgfootprint.jpg");
+    background-size: 80px 60px;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+  }*/
+
+/*background: url("img_flwr.gif");
+    background-size: 80px 60px;
+    background-repeat: no-repeat;
+    padding-top: 40px;*/
+
+
+  #facebook {
+    position: absolute;
+    top: 3%;
+    border-radius: 5px 20px 5px;
+    right: .6%;
+  }
+
+  #twitter {
+    position: absolute;
+    top: 50%;
+    border-radius: 5px 20px 5px;
+    right: .6%;
+  }
+}
+
+
+
+@media all and (min-width: 878px) {
+
+  
+  #menu li {
+   
+    font-size: 1.8em;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  
+
+  
+}
+
+
+@media all and (min-width: 930px) {
+
+  
+}
+
+.clearfix:after, .clearfix:before {
+  content: block;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
