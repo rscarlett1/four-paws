@@ -76,13 +76,6 @@ nav:after {
   border-radius: 5px 20px 5px;
 }
 
-header{
-  width:100%; 
-  background:inherit; 
-  height:50px; 
-  line-height:50px;
-}
-
 .hamburger{
   background:none;
   position:absolute;
@@ -134,12 +127,13 @@ button.accordion {
     color: #2F184e;
     cursor: pointer;
     padding: 18px;
-    width: 50%;
+    width: 80%;
     text-align: center;
     border: .2em ridge #f2c9c7;
     outline: none;
     transition: 0.4s;
     font-size: 1.5em;
+    margin-left: 100px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -215,15 +209,17 @@ div.panel th, td{
   #menu li {
     box-sizing: border-box;
     display: inline-block;
-    color: #cfd0ca;
-  /*  padding-top: 10%;
-    padding-right: 3%;*/
-   /* margin: 2em .3em;*/
-   /* margin-right: 2em;*/
-   padding: 0 10px;
+    color: white;
+    padding: 0 10px;
     font-size: 1em;
     height: 100px;
     line-height: 100px;
+    text-decoration: none;
+  }
+
+  #menu li a{
+    text-decoration: none;
+    color: #b3d3ec;
   }
 
   #menu li:hover {
