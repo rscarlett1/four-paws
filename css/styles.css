@@ -177,11 +177,82 @@ div.panel table{
 div.panel th, td{
   text-align: center;
   padding:  1em 3em 1em 3em;
+  margin: 0 auto;
 }
 
 #map {
   height:100%;
 }
+
+#tac{
+  background-color: yellow;
+  width: 100%;
+}
+
+.border{
+  border: 5px ridge black;
+  border-radius: 15px;
+}
+
+#tac p{
+  text-align: justify;
+  padding: 15px;
+  color: white;
+}
+
+#contact{
+  background-color: red;
+
+}
+
+form{
+  border size: border-box;
+  padding: 10px;
+  width: 85%;
+  background-color: #b3d3ec;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+form label{
+  font-size: 16px;
+   font-weight: bold;
+}
+
+input[type="text"]{
+  background-color: white;
+  display: block;
+  width: 95%;
+  padding: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="email"]{
+  background-color:white;
+  display: block;
+  width: 95%;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#details{
+  background-color: green;
+  width: 95%;
+  border-size: border-box;
+  border: 5px ridge black;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+#details h2{
+  font-size: 20px;
+  text-align: center;
+}
+
+
 
 
 
@@ -253,6 +324,19 @@ div.panel th, td{
 
 .unslider img {
   max-width: 100%;
+}
+
+input[type="text"]{
+  background-color: #afb8e1;
+  display: inline-block;
+  width: 50%;
+  margin-left: 32px;
+}
+
+input[type="email"]{
+  background-color: #afb8e1;
+  display: inline-block;
+  width: 50%;
 }
 
 
