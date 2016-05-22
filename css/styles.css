@@ -252,7 +252,29 @@ input[type="email"]{
   text-align: center;
 }
 
+.footer-details{
+  margin: 0 auto;
+  border: 5px ridge black;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+}
 
+.footer-details a{
+  text-decoration: none;
+}
+
+
+
+#areas li a{
+  text-decoration: none;
+  background-color: red;
+}
+
+footer h2{
+  text-align: center;
+  font-size: 20px;
+}
 
 
 
@@ -354,9 +376,8 @@ input[type="email"]{
   }
 
   
-
   
-}
+
 
 
 @media all and (min-width: 930px) {
