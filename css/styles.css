@@ -496,15 +496,14 @@ footer{
   clear: both;
 }
 
-  
-  
-
-
-
-@media all and (min-width: 930px) {
-
+.unslider img {
+  max-width: 100%;
+} 
   
 
+
+
+@media all and (min-width: 930px) {  
 
 .clearfix:after, .clearfix:before {
   content: block;
@@ -512,11 +511,12 @@ footer{
 }
 
 .unslider img {
-  max-width: 80%;
+  max-width: 100%;
+  height: 1000px;
 }
 
 
-}
+
 
 
 

@@ -37,16 +37,11 @@ function initMap(){
           center: myLatLng
         });
 
-        var smallIcon = document.getElementById("icon");
-        smallIcon.height = 50;
-        smallIcon.width = 50;
-        console.log(smallIcon);
-
         markerdogwalk = new google.maps.Marker({
           position: myLatLng,
           map: map,
           title: 'Dog walk Starts and finishes here!',
-          icon: smallIcon,
+          icon: "img/rsz_pink-logo.jpg"
           
         });
 
