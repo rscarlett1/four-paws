@@ -7,6 +7,8 @@ function initMap(){
           center: {lat: -41.132085, lng: 175.029932},
           mapTypeId: google.maps.MapTypeId.STREET
         });
+        console.log(map);
+
 
         var flightPlanCoordinates = [
           {lat:  -41.130020, lng:175.031356},
@@ -14,6 +16,7 @@ function initMap(){
           {lat: -41.136600, lng: 175.032479},
           {lat: -41.133292, lng: 175.027011},
           {lat: -41.130020, lng: 175.027011},
+          {lat: -41.129152, lng: 175.026280},
           {lat:  -41.130020, lng:175.031356},
 
 
@@ -34,15 +37,22 @@ function initMap(){
           center: myLatLng
         });
 
+        var smallIcon = document.getElementById("icon");
+        smallIcon.height = 50;
+        smallIcon.width = 50;
+        console.log(smallIcon);
+
         markerdogwalk = new google.maps.Marker({
           position: myLatLng,
           map: map,
           title: 'Dog walk Starts and finishes here!',
-          icon: "http://placehold.it/50x50"
+          icon: smallIcon,
+          
         });
 
         
       markerdogwalk.addListener('click', toggleBounce);
+
       dogWalk.setMap(map);
 }
 
@@ -63,17 +73,17 @@ function initMap(){
 $( ".cross" ).hide();
 $( ".menu" ).hide();
 $( ".hamburger" ).click(function() {
-	$( ".menu" ).slideToggle( "slow", function() {
-		$( ".hamburger" ).hide();
-		$( ".cross" ).show();
-	});
+  $( ".menu" ).slideToggle( "slow", function() {
+    $( ".hamburger" ).hide();
+    $( ".cross" ).show();
+  });
 });
 
 $( ".cross" ).click(function() {
-	$( ".menu" ).slideToggle( "slow", function() {
-		$( ".cross" ).hide();
-		$( ".hamburger" ).show();
-	});
+  $( ".menu" ).slideToggle( "slow", function() {
+    $( ".cross" ).hide();
+    $( ".hamburger" ).show();
+  });
 });
 
 //Accordian code
